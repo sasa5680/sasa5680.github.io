@@ -20,11 +20,23 @@
     <script>
         $(document).ready(function () {});
     </script>
+
+    <style>
+        .card-deck {
+            padding: 10px;
+
+
+        }
+
+        .card {
+            background-color: rgb(111, 111, 111);
+        }
+    </style>
 </head>
 
 <body>
     <div class="jumbotron">
-        <h1 class="display-4">Java web Programmer</h1>
+        <h1 class="display-4" style="font-weight: 600;">Java Web Programmer</h1>
         <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sequi,
             atque rerum nobis distinctio quod quae, minima voluptatem in cum libero,
@@ -32,8 +44,17 @@
             quas.
         </p>
         <hr class="my-4" />
-        <p>심플 회원제 게시물 시연</p>
-        <a href="#" class="btn btn-primary btn-lg">시연하기</a>
+    </div>
+
+    <div class="jumbotron">
+        <h1 class="display-4" style="font-weight: 600;">Teck Stack</h1>
+        <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sequi,
+            atque rerum nobis distinctio quod quae, minima voluptatem in cum libero,
+            dolorem velit incidunt delectus fugiat consectetur doloremque maxime
+            quas.
+        </p>
+        <hr class="my-4" />
     </div>
 
     <div class="card-deck">
@@ -75,8 +96,79 @@
                 <a href="" class="btn btn-primary">시연하기</a>
             </div>
         </div>
+
     </div>
 
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    KOA Board
+                </h5>
+                <p class="card-text">
+                    Koa와 React를 이용해 만든 간단한 게시판 입니다.
+                    <ul>
+                        <li>Koa</li>
+                        <li>React</li>
+                        <li>Docker</li>
+                        <li>Etc...</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href="http://koaboard.herokuapp.com/" target="_blank" class="btn btn-primary">코드보기</a>
+                <a href="http://koaboard.herokuapp.com/about" target="_blank" class="btn btn-primary"
+                    class="btn btn-primary">시연하기</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    Open News
+                </h5>
+                <p class="card-text">
+                    Spring Boot와 React를 이용해 제작한 News App입니다.
+                    <ul>
+                        <li>Spring Boot</li>
+                        <li>React</li>
+                        <li>Heroku</li>
+                        <li>Etc...</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href="http://koaboard.herokuapp.com/" target="_blank" class="btn btn-primary">코드보기</a>
+                <a href="http://koaboard.herokuapp.com/about" target="_blank" class="btn btn-primary"
+                    class="btn btn-primary">시연하기</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    Kakao Talk Clone
+                </h5>
+                <p class="card-text">
+                    Spring Boot와 React를 이용해 제작한 Kakao Talk의 Clone 버전입니다.
+                    <ul>
+                        <li>Koa</li>
+                        <li>React</li>
+                        <li>Docker</li>
+                        <li>Etc...</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="card-footer">
+                <a href="http://koaboard.herokuapp.com/" target="_blank" class="btn btn-primary">코드보기</a>
+                <a href="http://koaboard.herokuapp.com/about" target="_blank" class="btn btn-primary"
+                    class="btn btn-primary">시연하기</a>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"
