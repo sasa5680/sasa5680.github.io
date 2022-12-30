@@ -22,14 +22,59 @@
     </script>
 
     <style>
-        .card-deck {
-            padding: 10px;
+        body {
+            background-color: black;
+            color: white;
+        }
 
+        .jumbotron {
+            margin: 20px;
+            background-color: #272A2C;
+        }
+
+        .card-deck {
+
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .card-deck .card {
+            margin: 10px;
+            background-color: rgb(65, 65, 65);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .stack-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 20px;
 
         }
 
-        .card {
-            background-color: rgb(111, 111, 111);
+        .stack-item-container {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .stack-item {
+            width: 130px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            grid-gap: 10px;
+        }
+
+        .stack-item .stack-item-text {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 550;
         }
     </style>
 </head>
@@ -43,18 +88,130 @@
             dolorem velit incidunt delectus fugiat consectetur doloremque maxime
             quas.
         </p>
-        <hr class="my-4" />
     </div>
 
+    <!-- 테크스택  -->
     <div class="jumbotron">
         <h1 class="display-4" style="font-weight: 600;">Teck Stack</h1>
-        <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sequi,
-            atque rerum nobis distinctio quod quae, minima voluptatem in cum libero,
-            dolorem velit incidunt delectus fugiat consectetur doloremque maxime
-            quas.
+
+        <!-- 프로그래밍 언어 -->
+        <p class="stack-title">
+            Language
         </p>
-        <hr class="my-4" />
+        <div class="stack-item-container">
+            <div class="stack-item">
+                <img class="logo" src="./java.png">
+                <div class="stack-item-text">
+                    Java
+                </div>
+            </div>
+            <div class="stack-item">
+                <img class="logo" src="./python.png">
+                <div class="stack-item-text">
+                    Python
+                </div>
+            </div>
+            <div class="stack-item">
+                <img class="logo" src="./Javascript_Logo.png">
+                <div class="stack-item-text">
+                    JS
+                </div>
+            </div>
+            <div class="stack-item">
+                <img class="logo" src="./C.png">
+                <div class="stack-item-text">
+                    C
+                </div>
+            </div>
+        </div>
+        </p>
+
+        <!-- 프론트엔드 -->
+        <p class="stack-title">
+            Framework (FE)
+        </p>
+        <div class="stack-item-container">
+            <div class="stack-item">
+                <img class="logo" src="./logo_react.png">
+                <div class="stack-item-text">
+                    React
+                </div>
+            </div>
+            <div class="stack-item">
+                <img class="logo" src="./logo_vue.png">
+                <div class="stack-item-text">
+                    Vue
+                </div>
+            </div>
+        </div>
+        </p>
+
+        <!-- 프론트엔드 -->
+        <p class="lead">
+            <p class="stack-title">
+                Framework (BE)
+            </p>
+            <div class="stack-item-container">
+                <div class="stack-item">
+                    <img class="logo" src="./spring-logo.png">
+                    <div class="stack-item-text">
+                        Spring
+                    </div>
+                </div>
+                <div class="stack-item">
+                    <img class="logo" src="./logo_koa.png">
+                    <div class="stack-item-text">
+                        KOA
+                    </div>
+                </div>
+            </div>
+        </p>
+
+        <!-- DB -->
+        <p class="lead">
+            <p class="stack-title">
+                DB
+            </p>
+            <div class="stack-item-container">
+                <div class="stack-item">
+                    <img class="logo" src="./logo-mysql.png">
+                    <div class="stack-item-text">
+                        MySql
+                    </div>
+                </div>
+                <div class="stack-item">
+                    <img class="logo" src="./logo_mongodb.png">
+                    <div class="stack-item-text">
+                        Mongo
+                    </div>
+                </div>
+            </div>
+        </p>
+        <p class="lead">
+            <p class="stack-title">
+                ETC
+            </p>
+            <div class="stack-item-container">
+                <div class="stack-item">
+                    <img class="logo" src="./logo_docker .webp">
+                    <div class="stack-item-text">
+                        Docker
+                    </div>
+                </div>
+                <div class="stack-item">
+                    <img class="logo" src="./logo_github.png">
+                    <div class="stack-item-text">
+                        Github
+                    </div>
+                </div>
+                <div class="stack-item">
+                    <img class="logo" src="./logo_heroku.png">
+                    <div class="stack-item-text">
+                        Heroku
+                    </div>
+                </div>
+            </div>
+        </p>
     </div>
 
     <div class="card-deck">
@@ -138,7 +295,7 @@
                 </p>
             </div>
             <div class="card-footer">
-                <a href="http://koaboard.herokuapp.com/" target="_blank" class="btn btn-primary">코드보기</a>
+                <a href="http://koaboard.herokuapp.com/" target="_blank" class="btn btn-primary">GitHub(Front)</a>
                 <a href="https://myopennews.herokuapp.com/" target="_blank" class="btn btn-primary"
                     class="btn btn-primary">시연하기</a>
             </div>
